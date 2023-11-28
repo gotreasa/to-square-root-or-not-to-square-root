@@ -5,12 +5,13 @@ const squareNumber = (value: number): number => {
   return Math.pow(value, 2);
 };
 
-const toSquareOrRoot = (input: Array<number>): number[] => {
-  return input.map((value) => {
-    if (hasSquareRoot(value)) return Math.sqrt(value);
+const squareOrRootValue = (value: number): number => {
+  if (hasSquareRoot(value)) return Math.sqrt(value);
 
-    return squareNumber(value);
-  });
+  return squareNumber(value);
 };
+
+const toSquareOrRoot = (input: Array<number>): number[] =>
+  input.map(squareOrRootValue);
 
 export default toSquareOrRoot;
