@@ -1,8 +1,7 @@
-import Dummy from '../../src/ArraySquareRoot';
+import toSquareOrRoot from '../../src/ArraySquareRoot';
 
-describe('Check the Dummy class is working', () => {
-  test('should have a class object valid set to true', () => {
-    const dummy = new Dummy();
-    expect(dummy.valid).toBe(true);
+describe('To Square or Root', () => {
+  test('should return [1, 1] for the input [1, 1]', () => {
+    expect(toSquareOrRoot([1, 1])).toEqual([1, 1]);
   });
 });

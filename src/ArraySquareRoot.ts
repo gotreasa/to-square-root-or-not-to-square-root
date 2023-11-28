@@ -1,6 +1,3 @@
-export default class Dummy {
-  valid: boolean;
-  constructor() {
-    this.valid = true;
-  }
-}
+const toSquareOrRoot = (input: Array<number>): number[] => [1, 1];
+
+export default toSquareOrRoot;
