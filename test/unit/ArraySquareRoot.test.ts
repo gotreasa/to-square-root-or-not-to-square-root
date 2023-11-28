@@ -24,4 +24,10 @@ describe('To Square or Root', () => {
   test('should return [289, 1369, 169] for the input [17, 37, 13]', () => {
     expect(toSquareOrRoot([17, 37, 13])).toEqual([289, 1369, 169]);
   });
+
+  // test('should return [289, 1369, 169, 2, 3, 4] for the input [17, 37, 13, 4, 9, 16]', () => {
+  //   expect(toSquareOrRoot([17, 37, 13, 4, 9, 16])).toEqual([
+  //     289, 1369, 169, 2, 3, 4,
+  //   ]);
+  // });
 });
